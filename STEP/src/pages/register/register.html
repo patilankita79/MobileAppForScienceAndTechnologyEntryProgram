@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+       <ion-icon name="clipboard"></ion-icon>
+
+       Register
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+   <ion-card>
+
+  <ion-card-header>
+    <strong >Science and Technology Entry Program</strong>
+  </ion-card-header>
+
+  
+</ion-card>
+  <div><h4></h4></div>
+  <form [formGroup]="registrationForm" (submit)="registerStudent()" >
+  <ion-list>
+
+  <ion-item>
+    <ion-label floating><strong>First Name </strong></ion-label>
+    <ion-input type="text"  [(ngModel)]="firstName" formControlName="firstName"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating><strong>Last Name </strong></ion-label>
+    <ion-input type="text"  [(ngModel)]="lastName" formControlName="lastName"></ion-input>
+  </ion-item>
+
+   <ion-item>
+    <ion-label floating><strong>School</strong></ion-label>
+    <ion-input type="text"  [(ngModel)]="schoolName" formControlName="schoolName"></ion-input>
+  </ion-item>
+
+   <ion-item>
+    <ion-label floating><strong>Grade</strong></ion-label>
+    <ion-input type="number"   [(ngModel)]="grade" formControlName="grade"></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label floating><strong>Email ID </strong> </ion-label>
+    <ion-input type="email"   [(ngModel)]="email" formControlName="email" ></ion-input>
+  </ion-item>
+  
+
+   <ion-item>
+     
+    <ion-label floating><strong>  Phone </strong></ion-label>
+    <ion-input type="tel" maxlength=10   [(ngModel)]="phone" formControlName="phone" ></ion-input>
+  </ion-item>
+  
+
+</ion-list>
+
+<div padding>
+  
+ <button ion-button icon-center round block type="submit" [disabled]=!registrationForm.valid>
+  
+
+ Register &nbsp; &nbsp;<ion-icon name="play"></ion-icon>
+</button>
+</div>
+</form>
+</ion-content>

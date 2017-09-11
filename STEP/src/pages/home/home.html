@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+     <ion-icon name="contact"></ion-icon>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+
+  <ion-card-header>
+    <strong >Science and Technology Entry Program</strong>
+  </ion-card-header>
+
+  
+</ion-card>
+<br>
+<form [formGroup]="loginForm" (submit)="login()" >
+  <ion-list>
+
+  <ion-item>
+    <ion-label><strong>Username</strong></ion-label>
+    <ion-input type="text" formControlName="userName"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label><strong>Password</strong></ion-label>
+    <ion-input type="password" formControlName="password"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<div padding>
+  
+ <button ion-button icon-center  round block type="submit" [disabled]=!loginForm.valid>
+  
+  
+   Login &nbsp; &nbsp;<ion-icon name="aperture"></ion-icon>
+</button>
+
+ <!--Float the icon right 
+<button ion-button icon-right round>
+ Regsiter
+  <ion-icon name="clipboard"></ion-icon>
+</button>-->
+</div>
+</form>
+</ion-content>
