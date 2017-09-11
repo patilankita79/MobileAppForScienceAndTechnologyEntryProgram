@@ -1,7 +1,7 @@
 # Hybrid mobile application for Science and Technology Entry Program (STEP)
 This is a hybrid mobile application developed in Ionic 3 and Angular 4 with Firebase and AngularFire for <strong>Science and Technology Education Program(STEP)</strong> which will be used for registration of the students for Robotics competition. The application is integrated with Firebase database to store the data.
 <hr>
-AngularFire2 i the official Angular library for Firebase. <br/>
+<b>AngularFire2</b> is an official Angular library for Firebase. <br/><br/>
 To install AngularFire 2
 <blockquote>$npm install angularfire2 firebase --save</blockquote>
 <hr>
