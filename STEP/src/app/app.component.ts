@@ -16,12 +16,12 @@ export class MyApp {
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
 
     firebase.initializeApp({
-      apiKey: "AIzaSyAnJgX0uLx7V3-Tq6pOioUsztAMlvTOQTk",
+      apiKey: "YOUR API KEY",
     authDomain: "step-1f086.firebaseapp.com",
     databaseURL: "https://step-1f086.firebaseio.com",
     projectId: "step-1f086",
     storageBucket: "step-1f086.appspot.com",
-    messagingSenderId: "417338233199"
+    messagingSenderId: "YOUR MESSAGING ID"
     });
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
